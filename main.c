@@ -171,7 +171,7 @@ int main(){
 				char* value = (char*)malloc(sizeof(char) * strlen(new_st));
 				strcpy(value, new_st);
 				int pos = bplustree_find(new_key);
-				printf("%d\n",pos);
+				//printf("%d\n",pos);
 				if (pos != -1) { 
 					if (File_Modify(pos, new_key, new_st)) { 
 						bplustree_modify(new_key, value);
